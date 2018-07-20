@@ -1,24 +1,24 @@
 # Table of Contents
 [Overview](Overview)
-[Steps Run the Application](Steps Run the Application)
+[Steps to Run the Application](Steps Run the Application)
 [Project Criteria](Project Criteria)
 [Resources](Resources)
 
-#Overview
-This project is to learn TDD. To complete this project successfuly, I had to write tests (Project Criteria) for the provided source code. I updated to the current version of Jasmine.
+# Overview
+This project is to learn TDD. To complete this project successfuly, I had to write tests following the Project Criteria for the provided source code. Test specs were written in jasmine/spec/feedreader.js(jasmine/spec/feedreader.js) I updated to the current version of Jasmine.
 
 ## Steps Run the Application
 1. Initial Entries
-⋅⋅a. New Feed Selection
-⋅⋅b. New content added when updated
-⋅⋅c. After loadFeed run check to see if entry
+ - a. New Feed Selection
+ - b. New content added when updated
+ - c. After loadFeed run check to see if entry
 2. The menu
-⋅⋅a. Menu toggle
-⋅⋅b. Check if menu toggles visibility
+ - a. Menu toggle
+ - b. Check if menu toggles visibility
 3. RSS Feeds
-⋅⋅a. Feeds are defined
-⋅⋅b. Feed has a URL defined
-⋅⋅c. Feed has a name defined
+ - a. Feeds are defined
+ - b. Feed has a URL defined
+ - c. Feed has a name defined
 
 ## Project Criteria
 
@@ -47,5 +47,5 @@ Review the Feed Reader Testing [Project Rubric](https://review.udacity.com/#!/pr
 21. Write a README file detailing all steps required to successfully run the application. If you have added additional tests (for Udacious Test Coverage),  provide documentation for what these future features are and what the tests are checking for.
 
 ## Resources
-[CodeCraft.tv Unit Testing](https://codecraft.tv/courses/angular/unit-testing/jasmine-and-karma/)
-[DivHints.io Jasmine Cheatsheet](https://devhints.io/jasmine)
+- [CodeCraft.tv Unit Testing](https://codecraft.tv/courses/angular/unit-testing/jasmine-and-karma/)
+- [DivHints.io Jasmine Cheatsheet](https://devhints.io/jasmine)
