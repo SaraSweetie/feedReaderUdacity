@@ -1,11 +1,11 @@
 # Table of Contents
-[Overview](Overview)
-[Steps to Run the Application](Steps_Run_the_Application)
-[Project Criteria](Project_Criteria)
-[Resources](Resources)
+- [Overview](Overview)
+- [Steps to Run the Application](Steps_Run_the_Application)
+- [Project Criteria](Project_Criteria)
+- [Resources](Resources)
 
 # Overview
-This project is to learn TDD. To complete this project successfuly, I had to write tests following the Project Criteria for the provided source code. Test specs were written in jasmine/spec/feedreader.js(jasmine/spec/feedreader.js) I updated to the current version of Jasmine.
+This project is to learn TDD. To complete this project successfuly, I had to write tests following the Project Criteria for the provided source code. Test specs were written in [jasmine/spec/feedreader.js](jasmine/spec/feedreader.js) I updated to the current version of Jasmine.
 
 ## Steps Run the Application
 1. RSS Feeds
