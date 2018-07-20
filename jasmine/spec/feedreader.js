@@ -77,11 +77,12 @@ $(function() {
 			document.querySelector('.menu-icon-link').click();
 			expect(body).toHaveClass('menu-hidden');
         });
+    });
 
     /* TODO: Write a new test suite named "Initial Entries" */
     describe('Initial Entries', () => {
     	let feedFeed = document.querySelector('.feed');
-    	let entry = document.querySelectorAll('.entry');
+    	//let entry = document.querySelectorAll('.entry'); // returns object node?
 
         /* TODO: Write a test that ensures when the loadFeed
          * function is called and completes its work, there is at least
@@ -96,14 +97,31 @@ $(function() {
         it('After loadFeed run check to see if entry', () => {
         	expect(feedFeed).toBeDefined();
         	expect(feedFeed.childElementCount).toBeGreaterThan(0);
-        	expect(entry).toBeGreaterThan(0);
+        	//expect(entry).toBeGreaterThan(0);
         });
 
     /* TODO: Write a new test suite named "New Feed Selection" */
+ 	describe('New Feed Selection', () => {
+ 		let oldFeed;
+ 		let newFeed;
         /* TODO: Write a test that ensures when a new feed is loaded
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
          */
+        beforeEach((done) => {
+        	loadFeed(0, () => {
+        		oldFeed = document.querySelector('.feed').innerHTML;
+
+        		loadFeed(1, ()=> {
+        			newFeed = document.querySelector('.feed').innerHTML;
+		        	done();
+		        });
+		    });
+		});
+
+        it('New content added when updated', () => {
+        	expect(newFeed).not.toBe(oldFeed);
+        });
     });
 	});
 }());
