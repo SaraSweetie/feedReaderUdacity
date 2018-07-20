@@ -44,9 +44,9 @@ $(function() {
          * and that the name is not empty.
          */
         it('Feed has a name defined', () =>{
-         	for (let name of allFeeds){
-				expect(name.name).toBeDefined();
-	         	expect(name.name.length).not.toBe(0);
+         	for (let feed of allFeeds){
+				expect(feed.name).toBeDefined();
+	         	expect(feed.name.length).not.toBe(0);
         	}
         });
     });
@@ -79,6 +79,9 @@ $(function() {
         });
 
     /* TODO: Write a new test suite named "Initial Entries" */
+    describe('Initial Entries', () => {
+    	let feedFeed = document.querySelector('.feed');
+    	let entry = document.querySelectorAll('.entry');
 
         /* TODO: Write a test that ensures when the loadFeed
          * function is called and completes its work, there is at least
@@ -86,12 +89,21 @@ $(function() {
          * Remember, loadFeed() is asynchronous so this test will require
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
+        beforeEach((done) => {
+        	loadFeed(0, done);
+        })
+
+        it('After loadFeed run check to see if entry', () => {
+        	expect(feedFeed).toBeDefined();
+        	expect(feedFeed.childElementCount).toBeGreaterThan(0);
+        	expect(entry).toBeGreaterThan(0);
+        });
 
     /* TODO: Write a new test suite named "New Feed Selection" */
-
         /* TODO: Write a test that ensures when a new feed is loaded
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
          */
+    });
 	});
 }());
