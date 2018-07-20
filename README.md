@@ -1,24 +1,24 @@
 # Table of Contents
 [Overview](Overview)
-[Steps to Run the Application](Steps Run the Application)
-[Project Criteria](Project Criteria)
+[Steps to Run the Application](Steps_Run_the_Application)
+[Project Criteria](Project_Criteria)
 [Resources](Resources)
 
 # Overview
 This project is to learn TDD. To complete this project successfuly, I had to write tests following the Project Criteria for the provided source code. Test specs were written in jasmine/spec/feedreader.js(jasmine/spec/feedreader.js) I updated to the current version of Jasmine.
 
 ## Steps Run the Application
-1. Initial Entries
- - a. New Feed Selection
- - b. New content added when updated
- - c. After loadFeed run check to see if entry
+1. RSS Feeds
+	- Feeds are defined and not empty
+	- Feed has a URL defined
+	- Feed has a name defined
 2. The menu
- - a. Menu toggle
- - b. Check if menu toggles visibility
-3. RSS Feeds
- - a. Feeds are defined
- - b. Feed has a URL defined
- - c. Feed has a name defined
+	- Menu toggle is set to hidden by default
+	- Check if menu toggles visibility (one click shows, two clicks hide)
+3. Initial Entries
+	- After loadFeed run check to see if entry
+4. New Feed Selection
+	- New content added when updated
 
 ## Project Criteria
 
