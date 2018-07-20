@@ -1,27 +1,26 @@
-# Project Overview
+# Table of Contents
+[Overview](Overview)
+[Steps Run the Application](Steps Run the Application)
+[Project Criteria](Project Criteria)
+[Resources](Resources)
 
-In this project you are given a web-based application that reads RSS feeds. The original developer of this application clearly saw the value in testing, they've already included [Jasmine](http://jasmine.github.io/) and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we're now left with an application with an incomplete test suite. That's where you come in.
+#Overview
+This project is to learn TDD. To complete this project successfuly, I had to write tests (Project Criteria) for the provided source code. I updated to the current version of Jasmine.
 
+## Steps Run the Application
+1. Initial Entries
+⋅⋅a. New Feed Selection
+⋅⋅b. New content added when updated
+⋅⋅c. After loadFeed run check to see if entry
+2. The menu
+⋅⋅a. Menu toggle
+⋅⋅b. Check if menu toggles visibility
+3. RSS Feeds
+⋅⋅a. Feeds are defined
+⋅⋅b. Feed has a URL defined
+⋅⋅c. Feed has a name defined
 
-## Why this Project?
-
-Testing is an important part of the development process and many organizations practice a standard of development known as "test-driven development". This is when developers write tests first, before they ever start developing their application. All the tests initially fail and then they start writing application code to make these tests pass.
-
-Whether you work in an organization that uses test-driven development or in an organization that uses tests to make sure future feature development doesn't break existing features, it's an important skill to have!
-
-
-## What will I learn?
-
-You will learn how to use Jasmine to write a number of tests against a pre-existing application. These will test the underlying business logic of the application as well as the event handling and DOM manipulation.
-
-
-## How will this help my career?
-
-* Writing effective tests requires analyzing multiple aspects of an application including the HTML, CSS and JavaScript - an extremely important skill when changing teams or joining a new company.
-* Good tests give you the ability to quickly analyze whether new code breaks an existing feature within your codebase, without having to manually test all of the functionality.
-
-
-# How will I complete this project?
+## Project Criteria
 
 Review the Feed Reader Testing [Project Rubric](https://review.udacity.com/#!/projects/3442558598/rubric)
 
@@ -46,3 +45,7 @@ Review the Feed Reader Testing [Project Rubric](https://review.udacity.com/#!/pr
 19. Implement error handling for undefined variables and out-of-bound array access.
 20. When complete - all of your tests should pass. 
 21. Write a README file detailing all steps required to successfully run the application. If you have added additional tests (for Udacious Test Coverage),  provide documentation for what these future features are and what the tests are checking for.
+
+## Resources
+[CodeCraft.tv Unit Testing](https://codecraft.tv/courses/angular/unit-testing/jasmine-and-karma/)
+[DivHints.io Jasmine Cheatsheet](https://devhints.io/jasmine)
