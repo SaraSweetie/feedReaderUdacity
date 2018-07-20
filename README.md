@@ -1,13 +1,15 @@
 # Table of Contents
 - [Overview](Overview)
-- [Steps to Run the Application](Steps_Run_the_Application)
+- [Specs for the Feed Reader](Specs_for_the_Feed_Reader)
 - [Project Criteria](Project_Criteria)
 - [Resources](Resources)
 
 # Overview
 This project is to learn TDD. To complete this project successfuly, I had to write tests following the Project Criteria for the provided source code. Test specs were written in [jasmine/spec/feedreader.js](jasmine/spec/feedreader.js) I updated to the current version of Jasmine.
 
-## Steps Run the Application
+To view the Feed Reader running and see the Jasmine tests clone or download the repo. Then open index.html in your browser. You should see the Feed Reader pulling in blog posts from Udacity's blog. You can change where the articles are coming from by using the upper left menu. If you scroll to the bottom of the page you will see Jasmine running and all the tests/ specs passing.
+
+## Specs for the Feed Reader
 1. RSS Feeds
 	- Feeds are defined and not empty
 	- Feed has a URL defined
